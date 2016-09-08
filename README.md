@@ -1,7 +1,9 @@
-# Repository for intro to web dev hw & class exercises
+# intro to web dev hw & class exercises
 
-## a smaller heading
+## README
 
-### even smaller heading
+### README
+
+#### README
 
 READMEREADMEREADMEREADME
