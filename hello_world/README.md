@@ -4,14 +4,11 @@
 
 ### amazingly, it contains no butter
 
-Total Time:
-1 hr 5 min
-Prep:
-15 min
-Cook:
-50 min
-Yield:2 loaves
-Level:Easy
+Total Time: 1 hr 5 min
+Prep: 15 min
+Cook: 50 min
+Yield: 2 loaves
+Level: Easy
 
 #### Ingredients
 3 cups all-purpose flour
