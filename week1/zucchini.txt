@@ -1,3 +1,5 @@
+#Chocolate Chip Zucchini Bread
+
 Total Time: 1 hr 5 min
 
 Prep: 5 min
@@ -9,7 +11,7 @@ Yield: 2 loaves
 Level: Easy
 
 
-Ingredients
+##Ingredients
 
 3 cups all-purpose flour
 
@@ -44,7 +46,7 @@ Whipped cream, for serving
 Zucchini ribbons, for serving
 
 
-Directions
+##Directions
 
 Preheat oven at 350 degrees F. Grease (2) 9 by 5-inch loaf pans.
 Sift together flour, baking powder, salt, spices and baking soda.
