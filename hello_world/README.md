@@ -5,27 +5,46 @@
 ### amazingly, it contains no butter
 
 Total Time: 1 hr 5 min
+
 Prep: 15 min
+
 Cook: 50 min
+
 Yield: 2 loaves
+
 Level: Easy
 
 #### Ingredients
 3 cups all-purpose flour
+
 1/2 teaspoon baking powder
+
 1 teaspoon salt
+
 1/2 teaspoon ground cinnamon
+
 1/2 teaspoon ground nutmeg
+
 1 teaspoon baking soda
+
 3 eggs
+
 2 cups white sugar
+
 1 cup vegetable oil
+
 2 teaspoons vanilla extract
+
 2 cups grated zucchini
+
 1 cup chopped pecans
+
 1 cup semisweet chocolate chips
+
 1 tablespoon orange zest
+
 Whipped cream, for serving
+
 Zucchini ribbons, for serving
 
 #### Directions
