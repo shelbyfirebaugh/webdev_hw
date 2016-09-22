@@ -1,0 +1,64 @@
+@import 'https://fonts.googleapis.com/css?family=Kaushan+Script';
+
+body{
+	font-family: 'Kaushan Script', cursive;
+}
+
+html{
+	/* url(link to image) | repeat/no | center horiz | center vert | fixed/scroll */
+	background: url(../img/bg.jpg) no-repeat center center fixed;
+	background-size: cover;
+	/* CSS3 legacy browser fallbacks */
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	/* sad, sad internet explorer */
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg.jpg', sizingMethod='scale')";
+}
+
+div.container{
+	width: 900px;
+	margin: 0 auto;
+}
+
+div.polaroid{
+	position: relative;
+	width: 240px;
+	display: inline-block;
+	margin: 20px;
+}
+
+.polaroid img{
+	width: 100%;
+	height: auto;
+	border: 10px solid #fef9ef;
+	border-bottom: 45px solid #fef9ef;
+	/* box shadow - horiz shadow | vert shadow | blur | spread | color */
+	box-shadow: 3px 3px 5px 5px rgba(255, 255, 255, 0.2);
+	/* legacy fallbacks again */
+	-webkit-box-shadow: 3px 3px 5px 5px rgba(255, 255, 255, 0.2);
+	-moz-box-shadow: 3px 3px 5px 5px rgba(255, 255, 255, 0.2);
+	-o-box-shadow: 3px 3px 5px 5px rgba(255, 255, 255, 0.2);
+}
+
+/* absolule positioning - based on browser demensions */
+/* relative positioning - relative to where it would've rendered by default */
+/* position an element relative to its container - element positioned absolute, container positioned relative*/
+
+.polaroid p{
+	text-align: center;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+

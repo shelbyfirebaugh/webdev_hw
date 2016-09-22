@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>inline block vs block float demo/issues</title>
+	<style type="text/css">
+		/* universal selector for everything on the page */
+		*{
+			margin: 0;
+			padding: 0;
+		}
+
+		main, article{
+			background-color: rgba(0, 0, 255, 0.2);
+		}
+		main{
+			width: 900px;
+			margin: 0 auto;
+		}
+		article{
+			width: 300px;
+			height: 300px;
+			/*float: left;*/
+			/* add a border */
+			border: 2px solid blue;
+			/* modify width and height */
+	        /*300-4=296*/
+	        width: 296px;
+	        height: 296;
+	        /* add a margin */
+	        margin: 10px;
+	        /* 296-20=276 */
+	        width: 276px;
+	        height: 276px;
+	        display: inline-block;
+	        /* we can fix this extra margin with: 
+	        a negative margin of -4px OR
+	        adjust knowing we need to account for the extra 4px (subtract from horiz margin)
+	        */
+	       /* margin: 10px 8px;*/
+	       width: 273px;
+	       height: 273px;
+		}
+		.clear-fix:after {
+        display: block;
+        clear: both;
+        /* ensure some older compatability */
+        height: 0;
+        font-size: 0;
+        content: " ";
+        /* extra backup */
+        visibility: hidden;
+    }
+	</style>
+</head>
+<body>
+
+	<main class="clear-fix">
+		<article>1</article>
+		<article>2</article>
+		<article>3</article>
+	</main>
+
+</body>
+</html>
