@@ -1,9 +1,5 @@
 # intro to web dev hw & class exercises
 
-## README
+## class blog:
 
-### README
-
-#### README
-
-READMEREADMEREADMEREADME
+http://sites.bxmc.poly.edu/~shelbyfirebaugh/WebDev/
