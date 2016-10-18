@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Booleans and Conditionals</title>
+	<script type="text/javascript">
+		//declare a global variable
+		var isOn = true;
+
+
+		function switchOnOff(){
+			if (isOn == true){
+				alert("BOOLEAN isOn IS SET TO TRUE. SWITCHING TO FALSE NOW...");
+				isOn = false;
+			}else{
+				alert("BOOLEAN isOn IS SET TO FALSE. SWITCHING TO TRUE NOW...");
+				isOn = !isOn;
+			}
+		}
+
+
+
+
+	</script>
+</head>
+<body>
+	<button onclick="switchOnOff()">SWITCH ON/OFF</button>
+
+</body>
+</html>
