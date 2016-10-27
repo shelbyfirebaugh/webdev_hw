@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JSON or whatever</title>
+	<script type="text/javascript">
+
+		// var customer = {
+		// 	firstName: "Mario",
+		// 	lastName: "Kart",
+		// 	pets: ["dog", "cat", "iguana"]
+		// };
+
+		//access the customer's first name dot notation
+		// console.log(customer.firstName);
+		//last name?
+		// console.log(customer.lastName);
+		//2nd pet only
+		// console.log(customer.pets[1]);
+		//all pets
+		// for(var i = 0; i < customer.pets.length; i++){
+			// console.log(customer.pets[i]);
+		// }
+
+		//add a new key and value to our customer object
+		// customer.age = 45;
+		// console.log(customer);
+
+
+		//IN-CLASS EXERCISE WOOO
+		var myClass = { 
+    me: {
+        firstName: "Tony",
+        lastName: "Pony",
+        pets: ["Dog", "Cat", "Iguana"]
+    },
+    others: [
+        {
+        firstName: "Sally",
+        lastName: "Omally",
+        pets: ["ButterFly", "Bird"]
+        },
+        {
+        firstName: "Billy",
+        lastName: "Goat",
+        pets: ["Snake", "Fish"]
+        },
+        {
+        firstName: "Tara",
+        lastName: "Ohara",
+        pets: ["Gecko", "Lizard"]
+        }
+    ]
+};
+
+		console.log(myClass.me.pets[2]);
+		console.log(myClass.others[1].lastName);
+		console.log(myClass.others.length);
+
+		for(var i = 0; i < myClass.others.length; i++){
+			console.log(myClass.others[i].firstName);
+		}
+
+		console.log(myClass.others[2].pets[0]);
+
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

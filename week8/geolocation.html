@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>creepy geolocation</title>
+	<script type="text/javascript">
+		function getLocation() {
+			//check to see if device/browser allows geolocation
+			if(navigator.geolocation){
+				//do creepy stuff
+				navigator.geolocation.getCurrentPosition(setPosition);
+			}else{
+				alert("no you may NOT")
+			}
+		}
+
+		function setPosition(position) {
+			var lat = position.coords.latitude;
+			var lon = position.coords.longitude;
+
+			//grab location div as a var
+			var loc = document.getElementById("location");
+			loc.innerHTML = "Latitude: " + lat + "<br> Longitude: " + lon;
+		}
+
+		document.addEventListener("DOMContentLoaded", function(event){
+			getLocation();
+		});
+
+
+
+	</script>
+</head>
+<body onload="getLocation();">
+	<div id="location"></div>
+
+</body>
+</html>
