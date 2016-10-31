@@ -18,29 +18,6 @@
 	visibility: hidden;
 }
 
-
-
-/*main{
-	width: 960px;*/
-    /*margin: 0 auto;
-    margin-top: 190px;
-    margin-bottom: 20px;
-    position: relative;
-    display: block;*/
-}
-
-/*div.container{
-	position: relative;
-	width: 300px;
-	height: 400px;
-	display: inline-block;
-	margin: 10px;
-	float: left;*/
-	
-}
-
-
-
 .parent{
 	padding: 0;
 	margin: 220px 70px 20px 70px;
@@ -61,6 +38,28 @@
 	background-color: #9999ff;
 }
 
+h2{
+	font: 48px 'code', sans-serif;
+	letter-spacing: 2px;
+}
+
+h3{
+	font: 36px 'code', sans-serif;
+	letter-spacing: 2px;
+}
+
+h4{
+	font-family: 'Adobe Ming Std', serif;
+}
+
+a{
+	text-decoration: none;
+	color: #333;
+}
+
+p{
+	font-family: 'Adobe Ming Std', serif;
+}
 
 /* HEADER STYLES */
 header{
@@ -69,7 +68,7 @@ header{
     height: auto;
     position: fixed;
     top: 0px;
-    z-index: 10;
+    z-index: 100;
     overflow: hidden;
     /*display: block;*/
 }
@@ -87,8 +86,6 @@ header h1{
 header h1 a{
 	display: block;
 	text-align: center;
-	text-decoration: none;
-	color: #333;
 }
 
 .navbar{
@@ -147,13 +144,14 @@ nav ul li a:hover{
 	margin: 200px auto 30px auto;
 }
 
-#about div.parent div h2{
+/*#about div.parent div h2{
 	font: 48px 'code', sans-serif;
 	letter-spacing: 2px;
-}
+}*/
 
 #about div.parent div div p{
-	font: 24px 'Adobe Ming Std', serif;
+	/*font: 24px 'Adobe Ming Std', serif;*/
+	font-size: 24px;
 }
 
 
@@ -163,15 +161,94 @@ nav ul li a:hover{
 	width: 80%;
 	height: auto;
 	margin: 200px auto 30px auto;
+	position: relative;
+}
+
+#home div.parent div{
+	width: 80%;
+	height: auto;
+	display: block;
 }
 
 #home div.parent div h2{
-	font: 48px 'code', sans-serif;
-	letter-spacing: 2px;
+	/*font: 48px 'code', sans-serif;
+	letter-spacing: 2px;*/
+	display: block;
 }
 
-#home div.parent div div p{
-	font: 18px 'Adobe Ming Std', serif;
+#home div.submission{
+	margin: 20px auto;
+	/*border: 1px solid #99ccff;*/
+	box-shadow: 0 0 10px #ffe6e6, inset 0 0 10px #ffe6e6;
 }
+
+#home div.parent div div.submission h3{
+	text-decoration: none;
+	color: #333;
+	/*font: 24px 'code', sans-serif;
+	letter-spacing: 2px;*/
+	text-align: center;
+	display: inline-block;
+	position: relative;
+	/*width: auto;*/
+	bottom: 165px;
+	overflow: hidden;
+	/*z-index: 25;*/
+	/*left: 280px;*/
+}
+
+#home div.parent div div.submission h3 a:hover{
+	text-shadow: 0 0 18px #4da9ff;
+}
+
+#home div.parent h4{
+	font-size: 12px;
+	font-style: italic;
+	text-align: center;
+	display: inline-block;
+	position: absolute;
+	width: auto;
+	top: 150px;
+	left: 455px;
+}
+
+#home div.parent div div.submission p{
+	/*font: 18px 'Adobe Ming Std', serif;*/
+	font-size: 15px;
+	text-align: left;
+	display: inline-block;
+	position: absolute;
+	width: auto;
+	top: 185px;
+	left: 455px;
+}
+
+#home div.parent div div.submission img{
+	margin: 20px 20px 20px 40px;
+	/*z-index: 50;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
