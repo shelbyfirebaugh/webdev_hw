@@ -19,6 +19,49 @@
 }
 
 
+
+/*main{
+	width: 960px;*/
+    /*margin: 0 auto;
+    margin-top: 190px;
+    margin-bottom: 20px;
+    position: relative;
+    display: block;*/
+}
+
+/*div.container{
+	position: relative;
+	width: 300px;
+	height: 400px;
+	display: inline-block;
+	margin: 10px;
+	float: left;*/
+	
+}
+
+
+
+.parent{
+	padding: 0;
+	margin: 220px 70px 20px 70px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	height: auto;
+	justify-content: space-around;
+	align-items: center;
+	align-content: space-around;
+}
+
+.child{
+	width: 300px;
+	height: 400px;
+	margin: auto;
+	margin-bottom: 30px;
+	background-color: #9999ff;
+}
+
+
 /* HEADER STYLES */
 header{
 	width: 80%;
@@ -49,25 +92,33 @@ header h1 a{
 }
 
 .navbar{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	/*flex: 1 1 auto;*/
 	text-align: center;
 	margin: 0 auto;
 	margin-top: 20px;
-	display: block;
+	/*display: block;*/
 	
 }
 
 nav ul{
 	list-style-type: none;
-	display: inline-block;
-	margin: 10px 30px;
+	display: flex;
+	margin: 20px auto;
 	padding: 0;
 	overflow: hidden;
 }
 
 nav ul li{
-	float: left;
-	padding: 0 30px;
+	display: flex;
+	flex: 1 1 auto;
+	/*float: left;*/
+	padding: 0 10px;
+	margin: auto;
 	font: 24px 'Adobe Ming Std', serif;
+	line-height: 25px;
 }
 
 nav ul li a{
@@ -83,29 +134,6 @@ nav ul li a:hover{
 
 }
 
-main{
-	width: 960px;
-    margin: 0 auto;
-    margin-top: 190px;
-    margin-bottom: 20px;
-    position: relative;
-    display: block;
-}
-
-div.container{
-	position: relative;
-	width: 300px;
-	height: 400px;
-	display: inline-block;
-	margin: 10px;
-	float: left;
-	background-color: #9999ff;
-}
-
-main div h2{
-	font: 48px 'code', sans-serif;
-	letter-spacing: 2px;
-}
 
 /* STORIES PAGE STYLES */
 
@@ -113,14 +141,36 @@ main div h2{
 
 /* ABOUT PAGE STYLES */
 
-#about main div div p{
+#about div.parent{
+	width: 80%;
+	height: auto;
+	margin: 200px auto 30px auto;
+}
+
+#about div.parent div h2{
+	font: 48px 'code', sans-serif;
+	letter-spacing: 2px;
+}
+
+#about div.parent div div p{
 	font: 24px 'Adobe Ming Std', serif;
 }
 
 
 /* HOME PAGE STYLES */
 
-#home main div div p{
+#home div.parent{
+	width: 80%;
+	height: auto;
+	margin: 200px auto 30px auto;
+}
+
+#home div.parent div h2{
+	font: 48px 'code', sans-serif;
+	letter-spacing: 2px;
+}
+
+#home div.parent div div p{
 	font: 18px 'Adobe Ming Std', serif;
 }
 
