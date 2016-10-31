@@ -1,0 +1,123 @@
+@font-face{
+	font-family: 'code';
+	src: url('../code_light.otf');
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+}
+
+.clearfix:after{
+	display: block;
+	clear: both;
+	height: 0;
+	font-size: 0;
+	content: " ";
+	visibility: hidden;
+}
+
+
+/* HEADER STYLES */
+header{
+	width: 80%;
+    padding: 0 10%;
+    height: auto;
+    position: fixed;
+    top: 0px;
+    z-index: 10;
+    overflow: hidden;
+    /*display: block;*/
+}
+
+header h1{
+	position: relative;
+	top: 30px;
+	margin: 0 auto;
+	text-align: center;
+	display: block;
+	font: 72px 'code', sans-serif;
+	letter-spacing: 2px;
+}
+
+header h1 a{
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: #333;
+}
+
+.navbar{
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 20px;
+	display: block;
+	
+}
+
+nav ul{
+	list-style-type: none;
+	display: inline-block;
+	margin: 10px 30px;
+	padding: 0;
+	overflow: hidden;
+}
+
+nav ul li{
+	float: left;
+	padding: 0 30px;
+	font: 24px 'Adobe Ming Std', serif;
+}
+
+nav ul li a{
+	display: block;
+	text-align: center;
+	padding: 5px 5px;
+	text-decoration: none;
+	color: #333;
+}
+
+nav ul li a:hover{
+	text-shadow: 0 0 18px #9999ff;
+
+}
+
+main{
+	width: 960px;
+    margin: 0 auto;
+    margin-top: 190px;
+    position: relative;
+    display: block;
+}
+
+div.container{
+	position: relative;
+	width: 300px;
+	height: 400px;
+	display: inline-block;
+	margin: 10px;
+	float: left;
+	background-color: #9999ff;
+	/*float: left;*/
+}
+
+/* STORIES PAGE STYLES */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
