@@ -87,6 +87,7 @@ main{
 	width: 960px;
     margin: 0 auto;
     margin-top: 190px;
+    margin-bottom: 20px;
     position: relative;
     display: block;
 }
@@ -99,25 +100,28 @@ div.container{
 	margin: 10px;
 	float: left;
 	background-color: #9999ff;
-	/*float: left;*/
+}
+
+main div h2{
+	font: 48px 'code', sans-serif;
+	letter-spacing: 2px;
 }
 
 /* STORIES PAGE STYLES */
 
+/* POETRY PAGE STYLES */
+
+/* ABOUT PAGE STYLES */
+
+#about main div div p{
+	font: 24px 'Adobe Ming Std', serif;
+}
 
 
+/* HOME PAGE STYLES */
 
-
-
-
-
-
-
-
-
-
-
-
-
+#home main div div p{
+	font: 18px 'Adobe Ming Std', serif;
+}
 
 
