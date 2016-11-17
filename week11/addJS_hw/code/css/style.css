@@ -207,23 +207,26 @@ nav ul li a:hover{
 #stories .modal{
 	display: none;
 	position: fixed;
-	/*padding-top: 100px;*/
+	padding: 0;
+	margin: auto;
 	z-index: 100;
-	left: 30%;
-	top: 200px;
-	width: 40%;
-	height: auto;
-	overflow: auto;
+	left: 35%;
+	top: 25%;
+	width: 30%;
+	/*height: 50%;*/
+	/*overflow: auto;*/
 	background-color: rgba(0,0,0,0);
+	
 }
 
 #stories .modal-content{
 	background-color: #fefefe;
 	margin: auto;
-	padding: 20px;
-	border: 1px solid #888;
+	padding: 0;
+	/*border: 1px solid #888;*/
+	box-shadow: 0 0 10px #ffe6e6, inset 0 0 10px #ffe6e6;
 	width: 100%;
-	height: auto;
+	height: 80%;
 	/*overflow: none;*/
 }
 
