@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>goats in space</title>
+    <link href='http://fonts.googleapis.com/css?family=Asap:400,700' rel='stylesheet' type='text/css'>
+    <style>
+    body {
+
+        background: black;
+        margin: 5% 15% 0 15%;
+        overflow: hidden;
+    }
+    
+
+    .img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .box {
+        text-align: center;
+        float: right;
+        width: 150px;
+        height: 150px;
+        margin: 10px 10px;
+    }
+    
+    #wrapper {
+        width: 510px;
+        margin: 0 auto;
+    }
+    
+    .active {
+        top: 50%;
+        left: 50%;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="box">
+            <img class="img" src="img/goat.jpg" />
+        </div>
+        <div class="box">
+            <img class="img" src="img/goat2.jpg" />
+        </div>
+        <div class="box">
+            <img class="img" src="img/goat3.jpg" />
+        </div>
+        <div class="box">
+            <img class="img" src="img/goat.jpg" />
+        </div>
+        <div class="box">
+            <img class="img" src="img/goat2.jpg" />
+        </div>
+        <div class="box">
+            <img class="img" src="img/goat3.jpg" />
+        </div>
+        <div class="box">
+            <img class="img" src="img/goat.jpg" />
+        </div>
+        <div class="box">
+            <img class="img" src="img/goat2.jpg" />
+        </div>
+        <div class="box">
+            <img class="img" src="img/goat3.jpg" />
+        </div>
+        <br style="clear:both;" />
+    </div>
+    <!-- load scripts after dom has been rendered -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <!-- Our custom script -->
+    <script type="text/javascript">
+
+    tl = new TimelineMax({delay:0.5, repeat:0}); // -1 means to loop forever
+
+    // whever you say explode, wait 15s then explode
+    tl.add("explode", "+=30");
+
+    // IMG timeline
+    // for each img in array, call function & access its index in array as parameter index
+    $(".img").each(function(index){
+        tl.from(this, 5, {
+            delay: 0.1,
+            scale: -1,
+            x: randomNumber(-500, 2000),
+            y: randomNumber(-500, 1000),
+            z: -1,
+            opacity: 0,
+            rotation: randomNumber(-180, 180)
+        }, Math.random()*1.5);
+
+        tl.to(this, 5, {
+            x: randomNumber(-500, 2000),
+            y: randomNumber(-500, 1000),
+            z: randomNumber(100, 500),
+            opacity: 0,
+            rotation: randomNumber(-360, 720),
+            rotationX: randomNumber(-360, 360),
+            rotationY: randomNumber(-360, 360)
+        }, "explode+=" +Math.random()*0.5);
+    });
+
+    // center img on click
+    var $img = $(".box");
+
+    $img.click(function(){
+        var centerX = ($(window).width()/2-75);
+        var centerY = ($(window).height()/2-75);
+        var pos = $(this).position();
+        var distX = centerX - pos.left;
+        var distY = centerY - pos.top;
+
+        console.log(distX+ "," +distY);
+
+        TweenMax.to(this, 3, {
+            x: distX,
+            y: distY,
+            z: 100,
+            scale: 2,
+            ease: Power2.easeIn
+        });
+    });
+
+    // helper function for random math within a range as whole numbers
+    function randomNumber(min, max){
+        return Math.floor(Math.random()*(1+max-min)+min);
+    }
+
+
+
+
+
+    </script>
+</body>
+
+</html>
