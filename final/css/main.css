@@ -1,0 +1,94 @@
+		*{
+			margin: 0;
+			padding: 0;
+			text-decoration: none;
+			list-style: none;
+			background-color: #fff;
+		}
+
+		@font-face{
+			font-family: 'code';
+			src: url('code_light.otf');
+		}
+
+		h1{
+			font: 48px 'code', sans-serif;
+			letter-spacing: 2px;
+			margin: 25px;
+		}
+
+		body{
+			color: #333;
+			font: 16px 'Adobe Ming Std', serif;
+			line-height: 25px;
+		}
+
+		a{
+			color: #333;
+		}
+
+		a:hover{
+			color: #8892e0;
+		}
+
+		a:focus{
+			text-shadow: 0 0 10px #8892e0, 0 0 15px #8892e0, 0 0 20px #8892e0;
+		}
+
+
+
+		.container{
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: flex-start;
+			align-items: flex-start;
+			align-content: flex-start;
+		}
+
+		.item{
+			flex: 0 0 auto ;
+			margin: 20px auto;
+			padding: 3px;
+			box-shadow: 0 0 1px #ffe6e6, 0 0 2px #ffe6e6, 0 0 6px #ffe6e6, 0 0 12px #ffe6e6, inset 0 0 1px #ffe6e6, inset 0 0 2px #ffe6e6, inset 0 0 6px #ffe6e6, inset 0 0 12px #ffe6e6;
+		}
+
+		.item:hover{
+			box-shadow: 0 0 1px #8892e0, 0 0 2px #8892e0, 0 0 6px #8892e0, 0 0 12px #8892e0, inset 0 0 1px #8892e0, inset 0 0 2px #8892e0, inset 0 0 6px #8892e0, inset 0 0 12px #8892e0;
+		}
+
+		.empty{
+			flex: 0 1 auto ;
+			width: 320px;
+			height: 320px;
+			margin: auto;
+		}
+
+		p.title{
+			font-size: 18px;
+			font-weight: bold;
+		}
+
+		div.desc p{
+			line-height: 40px;
+			max-width: 500px;
+		}
+
+		.indiv-container{
+			display: flex;
+			flex-direction: column;
+			flex-wrap: nowrap;
+			justify-content: flex-start;
+			align-items: center;
+			align-content: center;
+		}
+
+		.indiv-item-pic{
+			flex: 0 1 auto;
+			margin: auto;
+		}
+
+		.indiv-item{
+			flex: 1 1 auto;
+			margin: auto;
+		}

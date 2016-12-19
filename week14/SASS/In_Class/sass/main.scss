@@ -1,0 +1,40 @@
+@import "vars"; 
+@import "gallery";
+
+//Basic Global Styles
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #DDD;
+    font-family: $primary-font;
+}
+
+main {
+    padding: 2.5vh;
+    padding-top: 50px;
+    height: 60vh;
+    //background-color: black;
+    color: white;
+
+    // Color Scripts in SASS http://sass-lang.com/documentation/Sass/Script/Functions.html
+    // div{
+    //     width:100px;
+    //     height:100px;
+    //     display:inline-block;
+    //     background-color: $primary-brand;
+    //     &.darken{
+    //         background-color: darken($primary-brand, 20%);
+    //     }
+    //     &.lighten{
+    //         background-color: lighten($primary-brand, 20%);
+    //     }
+    //     &.complement{
+    //         background-color: complement($primary-brand);
+    //     }
+    //     &.invert{
+    //         background-color: desaturate($primary-brand, 60%);
+    //     }
+    // }
+}
+
+@import "header";
