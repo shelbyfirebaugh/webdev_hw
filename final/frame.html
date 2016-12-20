@@ -16,6 +16,24 @@
 			margin: 25px;
 		}
 
+		footer{
+			display: block;
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			height: 50px;
+		}
+
+		footer p{
+			float: right;
+			line-height: 50px;
+			padding: 0 20px 0 0;
+		}
+
+		a:hover{
+			color: #8892e0;
+		}
+
 		a#logo:focus{
 			color: black;
 			text-shadow: none;
@@ -30,19 +48,25 @@
 			align-content: flex-start;
 		}
 
-	/*	.frame-container img{
-			display: inline;
-			z-index: 100;
-			width: 20vw
+		.whole-page{
+			position: fixed;
+		    top: 0;
+		    right: 0;
+		    bottom: 0;
+		    left: 0;
+		    width: 100vw;
+		    height: 100vh;
+		    margin: 0;
+		    padding: 0;
+		    overflow: hidden;
+		    z-index: -100;
 		}
-*/
+
 		div.nav{
 			flex: 0 1 auto ;
 			width: 30vw;
 			height: 100vh;
 			margin: auto;
-			/*background-image: url(maple_heart.gif);*/
-
 		}
 
 		div.nav nav{
@@ -55,21 +79,37 @@
 		}
 
 		div.iframe{
-			flex: 1 1 auto ;
+			flex: 1 1 auto;
 			width: 70vw;
 			height: 100vh;
 			margin: auto;
 			padding: 10px;
+			/*background-color: #F6F7FD;*/
+			overflow: scroll;
 		}
 
 		iframe{
 			width: 100%;
 			height: 100%;
 			border: none;
+			padding: 20px;
+		}
+
+		video{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 1920px;
+			height: 1080px;
+			z-index: -100;
 		}
 	</style>
 </head>
 <body>
+<div class="whole-page">
+	<video loop muted autoplay poster="pics/bkg.png">
+	    <source src="bkg.mov" type="video/mp4">
+	</video>
 	<h1><a href="about.html" target="frame" id="logo">shelby l firebaugh</a></h1>
 	
 	<div class="frame-container">
@@ -90,9 +130,12 @@
 	<iframe src="about.html" id="home" name="frame" allowfullscreen="allowfullscreen"></iframe>
 	</div>
 	</div>
-
+</div>
 </body>
 
+<footer>
+	<p>&copy;shelbylfirebaugh</p>
+</footer>
 
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript"></script>
