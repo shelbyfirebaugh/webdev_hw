@@ -3,6 +3,7 @@
 <head>
 	<title>shelby l firebaugh</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 	<style type="text/css">
 		
 		@font-face{
@@ -24,10 +25,23 @@
 			height: 50px;
 		}
 
-		footer p{
+		footer p.credit{
+			display: inline-block;
 			float: right;
 			line-height: 50px;
 			padding: 0 20px 0 0;
+		}
+
+		footer p.contact{
+			display: inline-block;
+			float: left;
+			line-height: 50px;
+			padding: 0 0 0 20px;
+		}
+
+		span.fa-plus{
+			font-size: 12px;
+			font-weight: 100;
 		}
 
 		a:hover{
@@ -134,7 +148,8 @@
 </body>
 
 <footer>
-	<p>&copy;shelbylfirebaugh</p>
+	<p class="credit">&copy; 2016 shelby l firebaugh</p>
+	<p class="contact"><span class="fa fa-plus" aria-hidden="true"></span><a href="mailto:slf404@nyu.edu"> contact</a></p>
 </footer>
 
 	<script type="text/javascript" src="js/jquery.min.js"></script>

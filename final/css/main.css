@@ -17,7 +17,8 @@
 			margin: 25px;
 		}
 
-		body{
+		body, footer{
+			color: #333;
 			font: 16px 'Adobe Ming Std', serif;
 			line-height: 25px;
 		}
@@ -34,7 +35,6 @@
 			text-shadow: 0 0 10px #8892e0, 0 0 15px #8892e0, 0 0 20px #8892e0;
 		}
 
-
 		.container{
 			display: flex;
 			flex-direction: row;
@@ -46,7 +46,7 @@
 
 		.item{
 			flex: 0 0 auto ;
-			margin: 30px auto;
+			margin: 20px auto;
 			padding: 3px;
 			box-shadow: 0 0 1px #ffe6e6, 0 0 2px #ffe6e6, 0 0 6px #ffe6e6, 0 0 12px #ffe6e6, inset 0 0 1px #ffe6e6, inset 0 0 2px #ffe6e6, inset 0 0 6px #ffe6e6, inset 0 0 12px #ffe6e6;
 		}
@@ -70,7 +70,6 @@
 		div.desc p{
 			line-height: 40px;
 			max-width: 500px;
-			margin: 0 0 20px 0;
 		}
 
 		.indiv-container{
@@ -80,7 +79,6 @@
 			justify-content: flex-start;
 			align-items: center;
 			align-content: center;
-			padding: 30px;
 		}
 
 		.indiv-item-pic{
